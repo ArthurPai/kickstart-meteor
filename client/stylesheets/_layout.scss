@@ -1,0 +1,61 @@
+/* Sticky footer styles
+/* http://getbootstrap.com/examples/sticky-footer-navbar/
+-------------------------------------------------- */
+$navbar-height: 64px;
+$footer-height: 60px;
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: $footer-height;
+}
+
+.app-content {
+  padding: ($navbar-height + 20) 0 0;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  //width: 100%;
+  /* Set the fixed height of the footer here */
+  height: $footer-height;
+  background-color: transparent;
+}
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+body {
+  background: #eee;
+  color: #666666;
+}
+
+.navbar {
+  &.navbar-fixed-top {
+    height: $navbar-height;
+  }
+
+  .navbar-nav {
+    .nav-item {
+      padding-top: 5px;
+    }
+  }
+}
+
+.footer .text-muted {
+  margin: 20px 0;
+}
+
+.home {
+  color: #000000;
+  padding-top: 60px;
+  text-align: center;
+}
