@@ -1,0 +1,12 @@
+{
+    "confirm": {
+        "ok": "\u786e\u5b9a",
+        "cancel": "\u53d6\u6d88"
+    },
+    "common": {
+        "powered_by": "Powered by intXtion",
+        "signup": "\u6ce8\u518c",
+        "login": "\u767b\u5f55",
+        "logout": "\u9000\u51fa"
+    }
+}

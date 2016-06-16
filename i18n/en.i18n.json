@@ -1,0 +1,12 @@
+{
+    "confirm": {
+        "ok": "Ok",
+        "cancel": "Cancel"
+    },
+    "common": {
+        "powered_by": "Powered by intXtion",
+        "signup": "Signup",
+        "login": "Login",
+        "logout": "Logout"
+    }
+}

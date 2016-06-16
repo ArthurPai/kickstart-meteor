@@ -1,0 +1,12 @@
+{
+  "common": {
+    "signup": "注册",
+    "login": "登录",
+    "logout": "退出",
+    "powered_by": "Powered by intXtion"
+  },
+  "confirm": {
+    "ok": "确定",
+    "cancel": "取消"
+  }
+}

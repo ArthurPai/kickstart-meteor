@@ -5,7 +5,7 @@ import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 
 import AppContainer from '/imports/ui/common/containers/app';
 import NotFound from '/imports/ui/common/components/not-found';
-import Home from '/imports/ui/common/components/home';
+import Home from '/imports/ui/common/containers/home';
 
 Meteor.startup(() => {
   render(

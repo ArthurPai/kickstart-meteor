@@ -21,6 +21,7 @@ reactive-dict
 # ui
 static-html
 fortawesome:fontawesome
+tap:i18n
 
 # production
 standard-minifier-js    # JS minifier run for production mode

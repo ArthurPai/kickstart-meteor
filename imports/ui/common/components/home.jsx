@@ -1,6 +1,8 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import Alert from 'react-s-alert';
+import { i18n } from '/imports/libs/i18n';
+
 import ConfirmModal from './confirm-modal.jsx';
 
 class Home extends React.Component {
@@ -44,8 +46,8 @@ class Home extends React.Component {
         <ConfirmModal modalIsOpen={this.state.modalIsOpen}
                       icon="warn"
                       title='Welcome'
-                      confirmText='OK'
-                      cancelText='Cancel'
+                      confirmText={i18n.t('confirm.ok')}
+                      cancelText={i18n.t('confirm.cancel')}
                       onConfirm={this.onConfirm.bind(this)}
                       onCancel={this.onCancel.bind(this)} />
       </div>

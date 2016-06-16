@@ -1,5 +1,6 @@
 import React from 'react';
 import { IndexLink, Link } from 'react-router';
+import { i18n } from '/imports/libs/i18n';
 
 class Navigation extends React.Component {
   renderInfo() {
@@ -7,7 +8,7 @@ class Navigation extends React.Component {
       <ul className="nav navbar-nav pull-xs-right">
         <li className="nav-item">
           <Link to="/" className="nav-link auth-link">
-            Logout
+            {i18n.t('common.logout')}
           </Link>
         </li>
       </ul>
@@ -18,7 +19,9 @@ class Navigation extends React.Component {
     return (
       <ul className="nav navbar-nav pull-xs-right">
         <li className="nav-item">
-          <Link to="/" className="auth-link nav-link">Login</Link>
+          <Link to="/" className="auth-link nav-link">
+            {i18n.t('common.login')}
+          </Link>
         </li>
       </ul>
     );

@@ -2,8 +2,8 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import Alert from 'react-s-alert';
 
-import Navigation from '../components/navigation.jsx';
-import Footer from '../components/footer.jsx';
+import Navigation from '../containers/navigation.jsx';
+import Footer from '../containers/footer.jsx';
 import ConnectionNotification from '../components/connection-notification.jsx';
 
 const CONNECTION_ISSUE_TIMEOUT = 5000;

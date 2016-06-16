@@ -1,5 +1,6 @@
 import React from 'react';
 import Modal from 'react-modal';
+import { i18n } from '/imports/libs/i18n';
 
 class ConfirmModal extends React.Component {
   onConfirm() {
@@ -27,8 +28,8 @@ class ConfirmModal extends React.Component {
     const iconStyle = { marginTop: '26px', marginBottom: '20px' };
     const buttonStyle = { marginLeft: '17px', marginRight: '17px', width: '194px', height: '46px' };
     const icon = this.iconImg();
-    const confirmText = this.props.confirmText || 'OK';
-    const cancelText = this.props.cancelText || 'Cancel';
+    const confirmText = this.props.confirmText || i18n.t('confirm.ok');
+    const cancelText = this.props.cancelText || i18n.t('confirm.cancel');
 
     return (
       <Modal
