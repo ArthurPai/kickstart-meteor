@@ -1,1 +1,1 @@
-import '../imports/startup/server';
+import '../imports/startup/site1/server';

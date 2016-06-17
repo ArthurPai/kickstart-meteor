@@ -1,2 +1,2 @@
 import 'bootstrap';
-import '../imports/startup/client';
+import '../imports/startup/site1/client';

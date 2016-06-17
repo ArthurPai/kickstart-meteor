@@ -3,7 +3,7 @@ import Helmet from 'react-helmet';
 import Alert from 'react-s-alert';
 import { i18n } from '/imports/libs/i18n';
 
-import ConfirmModal from './confirm-modal.jsx';
+import ConfirmModal from '/imports/ui/_shared/components/confirm-modal.jsx';
 
 class Home extends React.Component {
   constructor(props) {

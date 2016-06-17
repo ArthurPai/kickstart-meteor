@@ -4,7 +4,7 @@ import Alert from 'react-s-alert';
 
 import Navigation from '../containers/navigation.jsx';
 import Footer from '../containers/footer.jsx';
-import ConnectionNotification from '../components/connection-notification.jsx';
+import ConnectionNotification from '/imports/ui/_shared/components/connection-notification.jsx';
 
 const CONNECTION_ISSUE_TIMEOUT = 5000;
 

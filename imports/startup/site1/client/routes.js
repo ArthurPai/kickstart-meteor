@@ -3,12 +3,12 @@ import React from 'react';
 import { render } from 'react-dom';
 import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 
-import AppContainer from '/imports/ui/common/containers/app';
-import NotFound from '/imports/ui/common/components/not-found';
-import Home from '/imports/ui/common/containers/home';
-import StoriesList from '/imports/ui/stories/containers/list';
-import NewStory from '/imports/ui/stories/containers/new';
-import EditStory from '/imports/ui/stories/containers/edit';
+import AppContainer from '/imports/ui/site1/common/containers/app';
+import NotFound from '/imports/ui/site1/common/components/not-found';
+import Home from '/imports/ui/site1/common/containers/home';
+import StoriesList from '/imports/ui/site1/stories/containers/list';
+import NewStory from '/imports/ui/site1/stories/containers/new';
+import EditStory from '/imports/ui/site1/stories/containers/edit';
 
 Meteor.startup(() => {
   render(

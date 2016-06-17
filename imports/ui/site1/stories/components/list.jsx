@@ -9,8 +9,8 @@ import { DateRangePickerLocale } from '/imports/libs/utilities';
 import { remove } from '../actions/stories';
 import { getSearchQuery, setSearchQuery, setQueryDataRange } from '../actions/query';
 
-import Pagination from '/imports/ui/common/components/pagination.jsx';
-import ConfirmModal from '/imports/ui/common/components/confirm-modal.jsx';
+import ConfirmModal from '/imports/ui/_shared/components/confirm-modal.jsx';
+import Pagination from '/imports/ui/_shared/components/pagination.jsx';
 import StoryItem from './item.jsx';
 
 class StoriesList extends React.Component {
