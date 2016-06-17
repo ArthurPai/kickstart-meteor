@@ -1,6 +1,6 @@
 import { Meteor } from 'meteor/meteor';
 import { ValidatedMethod } from 'meteor/mdg:validated-method';
-import { DDPRateLimiter } from 'meteor/ddp-rate-limiter';
+import { addDDPRateLimiterRules } from '/imports/libs/ddp';
 
 import { Stories } from '../stories';
 
@@ -44,16 +44,4 @@ const METHODS = [
   removeStory,
 ].map(method => method.name);
 
-if (Meteor.isServer) {
-  // Only allow 5 operations per connection per second
-  DDPRateLimiter.addRule({
-    name(name) {
-      return (METHODS.indexOf(name) !== -1);
-    },
-    // Rate limit per connection ID
-    connectionId() {
-      return true;
-    },
-  }, 5, 1000);
-}
-
+addDDPRateLimiterRules(METHODS);

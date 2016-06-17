@@ -13,6 +13,11 @@ tracker                 # Meteor's client-side reactive programming library
 # standard libraries
 jquery                  # Helpful client-side library
 
+# accounts
+accounts-base
+accounts-password
+alanning:roles
+
 # data
 mongo                   # The database Meteor supports right now
 reactive-var            # Reactive variable for tracker

@@ -39,6 +39,31 @@
         "page": "Page",
         "last_page": "Last"
     },
+    "users": {
+        "list": "User List",
+        "list_empty": "Not have users",
+        "id": "ID",
+        "nickname": "Nickname",
+        "password": "Password",
+        "username": "Account",
+        "avatar": "Avatar",
+        "language": "Language",
+        "enterUsernameOrEmail": "Enter account",
+        "enterPassword": "Enter password",
+        "update_profile_success": "Update info success",
+        "profile_information": "Info"
+    },
+    "error": {
+        "unauthenticated": "Please Login",
+        "unauthorized": "Unauthorized",
+        "accounts": {
+            "usernameRequired": "Username Required",
+            "Invalid email": "Invalid email",
+            "Invalid phone": "Invalid phone number",
+            "minChar": "__length__ character minimum password.",
+            "Incorrect username or password": "Incorrect username or password"
+        }
+    },
     "common": {
         "powered_by": "Powered by intXtion",
         "signup": "Signup",

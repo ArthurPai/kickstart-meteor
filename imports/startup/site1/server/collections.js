@@ -1,1 +1,2 @@
-import '/imports/modules/stories';
+import '/imports/modules/accounts/index';
+import '/imports/modules/stories/index';

@@ -12,7 +12,13 @@ export const i18n = {
   },
 
   getLanguageName(language) {
-    return this.getLanguages()[language].name;
+    const languages = this.getLanguages();
+    if (Object.keys(languages).indexOf(language) !== -1) {
+      return languages[language].name;
+    } else {
+      const locale = this.getDefaultLanguage();
+      return languages[locale];
+    }
   },
 
   supportedLanguages() {
@@ -21,8 +27,15 @@ export const i18n = {
   },
 
   getDefaultLanguage() {
-    const languages = this.supportedLanguages();
-    return languages[1].key;
+    const localeFromBrowser = window.navigator.userLanguage || window.navigator.language;
+    let locale = 'en';
+
+    const languages = this.getLanguages();
+    Object.keys(languages).forEach((language) => {
+      if (localeFromBrowser === language) locale = language;
+    });
+
+    return locale;
   },
 
   getLanguage() {
@@ -34,30 +47,26 @@ export const i18n = {
   },
 
   getUserLanguage(userId) {
-    const defaultLang = this.getDefaultLanguage();
-
     if (userId) {
       const user = Meteor.users.findOne({ _id: userId });
       const language = user && user.profile && user.profile.language;
-      return language || defaultLang;
+      return language || this.getDefaultLanguage();
     }
 
-    return defaultLang;
+    return this.getDefaultLanguage();
   },
 
   getCurrentUserLanguage() {
-    const defaultLang = this.getDefaultLanguage();
-
     const user = Meteor.user();
     const language = user && user.profile && user.profile.language;
 
-    return language || defaultLang;
+    return language || this.getDefaultLanguage();
   },
 
   setupSimpleSchema() {
     const globalMessages = _.clone(SimpleSchema._globalMessages);
     Meteor.autorun(() => {
-      const lang = TAPi18n.getLanguage();  // eslint-disable-line no-unused-vars
+      const language = TAPi18n.getLanguage();  // eslint-disable-line no-unused-vars
       const localMessages = TAPi18n.__('simpleschema.messages', { returnObjectTrees: true });
       localMessages.regEx = _.map(localMessages.regEx, (_item) => {
         const item = Object.assign({}, _item);

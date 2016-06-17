@@ -28,6 +28,20 @@
     "enterSearch": "输入搜寻",
     "selectDateRange": "选择日期区间"
   },
+  "users": {
+    "list": "用户列表",
+    "list_empty": "無用户",
+    "id": "编号",
+    "username": "账号",
+    "password": "密码",
+    "nickname": "昵称",
+    "language": "语系",
+    "avatar": "头像",
+    "enterUsernameOrEmail": "输入你的帐号",
+    "enterPassword": "输入密码",
+    "profile_information": "用户信息",
+    "update_profile_success": "更新用户信息成功"
+  },
   "stories": {
     "list": "故事列表",
     "list_empty": "无资料",
@@ -44,5 +58,16 @@
     "last_page": "最后一页",
     "page": "页",
     "jump_page": "跳到"
+  },
+  "error": {
+    "unauthenticated": "请先登录",
+    "unauthorized": "权限不足",
+    "accounts": {
+      "usernameRequired": "必須填寫用戶名。",
+      "Invalid email": "不合法的电子邮件",
+      "Invalid phone": "不合法的手机号码",
+      "minChar": "密码至少__length__个字符长",
+      "Incorrect username or password": "帐号或密码错误，请重新输入"
+    }
   }
 }

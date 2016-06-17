@@ -39,6 +39,31 @@
         "page": "\u9801",
         "last_page": "\u6700\u5f8c\u4e00\u9801"
     },
+    "users": {
+        "list": "\u7528\u6236\u5217\u8868",
+        "list_empty": "\u7121\u7528\u6236",
+        "id": "\u7de8\u865f",
+        "nickname": "\u66b1\u7a31",
+        "password": "\u5bc6\u78bc",
+        "username": "\u5e33\u865f",
+        "avatar": "Avatar",
+        "language": "\u8a9e\u7cfb",
+        "enterUsernameOrEmail": "\u8f38\u5165\u4f60\u7684\u5e33\u865f",
+        "enterPassword": "\u8f38\u5165\u5bc6\u78bc",
+        "update_profile_success": "\u66f4\u65b0\u7528\u6236\u8cc7\u8a0a\u6210\u529f",
+        "profile_information": "\u7528\u6236\u8cc7\u8a0a"
+    },
+    "error": {
+        "unauthenticated": "\u8acb\u5148\u767b\u5165",
+        "unauthorized": "\u6b0a\u9650\u4e0d\u8db3",
+        "accounts": {
+            "usernameRequired": "\u5fc5\u9808\u586b\u5beb\u7528\u6236\u540d",
+            "Invalid email": "\u4e0d\u5408\u6cd5\u7684\u96fb\u5b50\u90f5\u4ef6",
+            "Invalid phone": "\u4e0d\u5408\u6cd5\u7684\u624b\u6a5f\u865f\u78bc",
+            "minChar": "\u5bc6\u78bc\u81f3\u5c11__length__\u500b\u5b57",
+            "Incorrect username or password": "\u5e33\u865f\u6216\u5bc6\u78bc\u932f\u8aa4\uff0c\u8acb\u91cd\u65b0\u8f38\u5165"
+        }
+    },
     "common": {
         "powered_by": "Powered by intXtion",
         "signup": "\u8a3b\u518a",
