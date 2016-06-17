@@ -15,7 +15,7 @@ body {
 }
 
 .app-content {
-  padding: ($navbar-height + 20) 0 0;
+  padding: ($navbar-height + 20) 15px 0;
 }
 
 .footer {
@@ -41,11 +41,12 @@ body {
 .navbar {
   &.navbar-fixed-top {
     height: $navbar-height;
+    font-size: 1rem;
   }
 
   .navbar-nav {
-    .nav-item {
-      padding-top: 5px;
+    .nav-link {
+      padding: 1rem 0.25rem;
     }
   }
 }
@@ -58,4 +59,87 @@ body {
   color: #000000;
   padding-top: 60px;
   text-align: center;
+}
+
+.page-header {
+  margin-bottom: 15px;
+
+  .form-group {
+    margin-left: 10px;
+  }
+
+  .input-group {
+    .input-group-btn {
+      &:first-child {
+        .btn {
+          border-radius: 0;
+        }
+      }
+
+      &:last-child {
+        .btn {
+          border-radius: 0;
+        }
+      }
+    }
+
+    input {
+      border-radius: 0;
+    }
+  }
+}
+
+.table-card {
+  height: 529px;
+  min-height: 529px;
+  border-radius: 0;
+  border: 0;
+  background-color: transparent;
+
+  .table {
+    margin-bottom: 0;
+    background-color: white;
+
+    thead > tr {
+      height: 40px;
+    }
+
+    tbody > tr {
+      height: 48px;
+      font-size: 0.75rem;
+    }
+
+    th, td {
+      white-space: nowrap;
+      height: 48px;
+      min-width: 48px;
+      border: 1px solid #d8d8d8;
+      vertical-align: middle;
+
+      &.edit-field-2 {
+        width: 120px;
+        min-width: 120px;
+      }
+
+      &.edit-field-1 {
+        width: 80px;
+        min-width: 80px;
+      }
+
+      &.serial {
+        width: 50px;
+        min-width: 50px;
+      }
+
+      &.id-field {
+        width: 185px;
+        min-width: 185px;
+      }
+
+      &.time-field {
+        width: 160px;
+        min-width: 160px;
+      }
+    }
+  }
 }

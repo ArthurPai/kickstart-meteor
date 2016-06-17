@@ -3,6 +3,42 @@
         "ok": "\u786e\u5b9a",
         "cancel": "\u53d6\u6d88"
     },
+    "editing": {
+        "modify": "\u4fee\u6539",
+        "add": "\u65b0\u589e",
+        "remove": "\u5220\u9664",
+        "edit": "\u7f16\u8f91",
+        "save": "\u4fdd\u5b58",
+        "add_success": "\u65b0\u589e\u6210\u529f",
+        "update_success": "\u4fee\u6539\u6210\u529f",
+        "cancel": "\u53d6\u6d88",
+        "remove_success": "\u5220\u9664\u6210\u529f"
+    },
+    "list": {
+        "serial": "\u5e8f\u53f7",
+        "id": "\u7f16\u53f7",
+        "created_time": "\u5efa\u7acb\u65f6\u95f4",
+        "enterSearch": "\u8f93\u5165\u641c\u5bfb",
+        "updated_time": "\u66f4\u65b0\u65f6\u95f4",
+        "selectDateRange": "\u9009\u62e9\u65e5\u671f\u533a\u95f4"
+    },
+    "stories": {
+        "list": "\u6545\u4e8b\u5217\u8868",
+        "enter_info": "\u65b0\u589e\u6545\u4e8b",
+        "list_empty": "\u65e0\u8d44\u6599",
+        "_id": "ID",
+        "update_info": "\u7f16\u8f91\u6545\u4e8b",
+        "confirm_remove": "\u78ba\u8a8d\u522a\u9664",
+        "name": "\u540d\u79f0",
+        "placeholder_name": "\u586b\u5199\u540d\u79f0",
+        "not_found": "NOT FOUND"
+    },
+    "pagination": {
+        "first_page": "\u7b2c\u4e00\u9875",
+        "jump_page": "\u8df3\u5230",
+        "page": "\u9875",
+        "last_page": "\u6700\u540e\u4e00\u9875"
+    },
     "common": {
         "powered_by": "Powered by intXtion",
         "signup": "\u6ce8\u518c",

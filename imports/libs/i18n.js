@@ -1,5 +1,6 @@
 import { Meteor } from 'meteor/meteor';
 import { TAPi18n } from 'meteor/tap:i18n';
+import { SimpleSchema } from 'meteor/aldeed:simple-schema';
 
 export const i18n = {
   t(key, options, langTag) {
@@ -51,5 +52,22 @@ export const i18n = {
     const language = user && user.profile && user.profile.language;
 
     return language || defaultLang;
+  },
+
+  setupSimpleSchema() {
+    const globalMessages = _.clone(SimpleSchema._globalMessages);
+    Meteor.autorun(() => {
+      const lang = TAPi18n.getLanguage();  // eslint-disable-line no-unused-vars
+      const localMessages = TAPi18n.__('simpleschema.messages', { returnObjectTrees: true });
+      localMessages.regEx = _.map(localMessages.regEx, (_item) => {
+        const item = Object.assign({}, _item);
+        if (item.exp) {
+          item.exp = eval(item.exp); // eslint-disable-line no-eval
+        }
+        return item;
+      });
+      const messages = _.extend(_.clone(globalMessages), localMessages);
+      SimpleSchema.messages(messages);
+    });
   },
 };

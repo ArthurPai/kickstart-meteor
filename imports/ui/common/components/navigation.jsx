@@ -31,7 +31,7 @@ class Navigation extends React.Component {
     return (
       <ul className="nav navbar-nav">
         <li className="nav-item">
-          <Link to="/" className="nav-link">Home</Link>
+          <Link to="/stories" className="nav-link">{i18n.t('stories.list')}</Link>
         </li>
       </ul>
     );
@@ -41,7 +41,7 @@ class Navigation extends React.Component {
     return (
       <ul className="nav navbar-nav">
         <li className="nav-item">
-          <Link to="/" className="nav-link">Home</Link>
+          <Link to="/stories" className="nav-link">{i18n.t('stories.list')}</Link>
         </li>
       </ul>
     );

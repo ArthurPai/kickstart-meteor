@@ -1,5 +1,8 @@
 // https://github.com/juliancwirko/meteor-bootstrap-npm-test 
+@import "./variables";
 @import '{}/node_modules/bootstrap/scss/bootstrap.scss';
 
 @import "./layout";
 @import "./modal";
+@import "./pagination";
+@import "./daterangepicker";

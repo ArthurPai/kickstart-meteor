@@ -1,12 +1,48 @@
 {
+  "confirm": {
+    "ok": "确定",
+    "cancel": "取消"
+  },
   "common": {
     "signup": "注册",
     "login": "登录",
     "logout": "退出",
     "powered_by": "Powered by intXtion"
   },
-  "confirm": {
-    "ok": "确定",
-    "cancel": "取消"
+  "editing": {
+    "add": "新增",
+    "edit": "编辑",
+    "modify": "修改",
+    "remove": "删除",
+    "save": "保存",
+    "cancel": "取消",
+    "add_success": "新增成功",
+    "update_success": "修改成功",
+    "remove_success": "删除成功"
+  },
+  "list": {
+    "serial": "序号",
+    "id": "编号",
+    "created_time": "建立时间",
+    "updated_time": "更新时间",
+    "enterSearch": "输入搜寻",
+    "selectDateRange": "选择日期区间"
+  },
+  "stories": {
+    "list": "故事列表",
+    "list_empty": "无资料",
+    "_id": "ID",
+    "name": "名称",
+    "enter_info": "新增故事",
+    "update_info": "编辑故事",
+    "confirm_remove": "確認刪除",
+    "placeholder_name": "填写名称",
+    "not_found": "NOT FOUND"
+  },
+  "pagination": {
+    "first_page": "第一页",
+    "last_page": "最后一页",
+    "page": "页",
+    "jump_page": "跳到"
   }
 }

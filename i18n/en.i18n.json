@@ -3,6 +3,42 @@
         "ok": "Ok",
         "cancel": "Cancel"
     },
+    "editing": {
+        "modify": "Modify",
+        "add": "Add",
+        "remove": "Delete",
+        "edit": "Edit",
+        "save": "Save",
+        "add_success": "Add Success",
+        "update_success": "Update Success",
+        "cancel": "Cancel",
+        "remove_success": "Delete Success"
+    },
+    "list": {
+        "serial": "Number",
+        "id": "ID",
+        "created_time": "Created Time",
+        "enterSearch": "Enter Search",
+        "updated_time": "Updated Time",
+        "selectDateRange": "Select Date Range"
+    },
+    "stories": {
+        "list": "Story List",
+        "enter_info": "Add Story",
+        "list_empty": "Not have stories",
+        "_id": "ID",
+        "update_info": "Edit",
+        "confirm_remove": "Confirm Delete?",
+        "name": "Name",
+        "placeholder_name": "Enter name",
+        "not_found": "NOT FOUND"
+    },
+    "pagination": {
+        "first_page": "First",
+        "jump_page": "Jump",
+        "page": "Page",
+        "last_page": "Last"
+    },
     "common": {
         "powered_by": "Powered by intXtion",
         "signup": "Signup",

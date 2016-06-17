@@ -17,6 +17,12 @@ jquery                  # Helpful client-side library
 mongo                   # The database Meteor supports right now
 reactive-var            # Reactive variable for tracker
 reactive-dict
+aldeed:collection2
+matb33:collection-hooks
+dburles:collection-helpers
+mdg:validated-method
+mdg:validation-error
+tmeasday:publish-counts
 
 # ui
 static-html
@@ -28,6 +34,8 @@ standard-minifier-js    # JS minifier run for production mode
 fourseven:scss
 juliancwirko:postcss
 orgztion:meteor-global-tether
+ddp-rate-limiter
 
 # mobile
 mobile-experience       # Packages for a great mobile UX
+aldeed:simple-schema@1.5.3
