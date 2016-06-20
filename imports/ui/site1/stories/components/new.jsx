@@ -1,6 +1,5 @@
 import React from 'react';
 import { browserHistory } from 'react-router';
-import { ValidationError } from 'meteor/mdg:validation-error';
 import Alert from 'react-s-alert';
 import { i18n } from '/imports/libs/i18n';
 
@@ -18,7 +17,7 @@ class NewStory extends React.Component {
 
   onCreated(error) {
     if (error) {
-      if (ValidationError.is(error)) {
+      if (error.errors) {
         this.setState({ errors: error.errors });
       } else {
         Alert.error(i18n.t(error.error));
